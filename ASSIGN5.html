@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> CSS </title>
+<meta charset="UTF-8">
+
+</head>
+<body>
+<script>
+
+/* FUNCTION FOR TO FIND  STRING IS  VOWE' */
+ var findVowel = function(string) {
+
+    var vowels = ["a", "e", "i", "o", "u"];
+
+    for(var i = 0; i < vowels.length; i++){
+        if(string === vowels[i]){
+            return "VOWEL";
+         }
+    }
+    
+    return "CONSONANT";
+
+};
+/* AFTER PASSING VALUES THE FINAL  RESULT  */
+document.write("<br>"+"sree is a volwel? " + findVowel("sree"));
+
+document.write("<br>"+"e is a volwel? " + findVowel("e"));
+document.write("<br>"+"b is a volwel? " + findVowel("b"));
+document.write("<br>"+"kdm is a volwel? " + findVowel("kdm"));
+</script>
+
+</body>
+</html>
